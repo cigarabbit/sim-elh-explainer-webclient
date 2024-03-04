@@ -57,8 +57,8 @@
                         <div class="mb-3">
                             <label for="approach" class="form-label">Approach:</label>
                             <select class="form-select" id="approach" name="approach" required>
-                                <option value="dynamic" selected th:selected="${optionVal == 'dynamic'}">Dynamic Programming
-                                </option>
+                                <option value="" disabled selected>Select an approach</option>
+                                <option value="dynamic" th:selected="${optionVal == 'dynamic'}">Dynamic Programming</option>
                                 <option value="topdown" th:selected="${optionVal == 'topdown'}">Top-Down</option>
                             </select>
                         </div>
